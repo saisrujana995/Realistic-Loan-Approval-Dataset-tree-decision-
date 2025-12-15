@@ -1,19 +1,77 @@
-🎯 Aim
+📊 Loan Approval Prediction using Decision Tree (Google Colab)
+📌 Project Overview
 
-To develop a Decision Tree–based supervised learning model for predicting loan approval outcomes.
+This project implements a Decision Tree Classifier to predict loan approval status based on applicant and financial features.
+The model is trained and evaluated in Google Colab using a realistic loan approval dataset.
 
-To preprocess real-world loan data and encode categorical features effectively.
+The goal is to:
 
-To optimize model performance using entropy-based splitting and controlled hyperparameters.
+Preprocess real-world loan data
 
-To evaluate classification accuracy on unseen test data.
+Train a Decision Tree model
 
-🛠 Technologies Used
+Achieve a high accuracy score
 
-Python – Core language for model development.
+Evaluate model performance
 
-Google Colab – Cloud-based environment for execution.
+🗂 Dataset
 
-Pandas & NumPy – Data preprocessing and numerical operations.
+File name: Loan_approval_data_2025.csv
 
-Scikit-learn – Model training, optimization, and evaluation.
+Source: Kaggle (Realistic Loan Approval Dataset – US & Canada)
+
+Target Variable: loan_status
+
+Features: Applicant income, credit history, loan amount, employment details, etc.
+
+⚙️ Technologies Used
+
+Python
+
+Google Colab
+
+Libraries:
+
+pandas
+
+numpy
+
+scikit-learn
+
+🧠 Machine Learning Model
+
+Algorithm: Decision Tree Classifier
+
+Criterion: Entropy
+
+Max Depth: 10
+
+Class Weight: Balanced
+
+Train-Test Split: 80% / 20% (Stratified)
+
+📈 Results
+
+Accuracy Achieved: ~0.85+ (may vary slightly due to randomness)
+
+The model performs well on balanced and imbalanced data due to class_weight='balanced'.
+
+🚀 How to Run the Project
+
+Open Google Colab
+
+Upload Loan_approval_data_2025.csv
+
+Copy and run the code from the notebook or script
+
+View the accuracy score output
+
+📌 Future Improvements
+
+Hyperparameter tuning using GridSearchCV
+
+Feature importance visualization
+
+Trying Random Forest or XGBoost
+
+Adding precision, recall, and confusion matrix
