@@ -1,53 +1,38 @@
-📊 Loan Approval Prediction using Decision Tree (Google Colab)  
+🎯 Aim
 
-📌 Project Overview
+The aim of this project is to design, implement, and evaluate a Decision Tree–based supervised learning model for predicting loan approval outcomes using a realistic financial dataset. The project emphasizes systematic data preprocessing, categorical feature encoding, and model optimization through controlled hyperparameter selection. By leveraging entropy-based information gain and class balancing techniques, the model aims to achieve robust classification performance while effectively handling feature heterogeneity and class imbalance inherent in real-world loan approval data.
 
-This project implements a Decision Tree Classifier to predict loan approval status based on applicant and financial features.
+🛠 Technologies Used
+🔹 Programming Language
 
-The model is trained and evaluated in Google Colab using a realistic loan approval dataset.
+Python – Selected for its extensive support for data analysis, machine learning pipelines, and rapid prototyping of classification models.
 
-The goal is to:
+🔹 Development Environment
 
-Preprocess real-world loan data
+Google Colab – Utilized for cloud-based execution, scalable computational resources, and seamless integration with data science libraries.
 
-Train a Decision Tree model
+🔹 Libraries and Frameworks
 
-Achieve a high accuracy score
+Pandas
 
-Evaluate model performance
+Used for structured data ingestion, duplicate removal, missing value handling, and feature selection.
 
-🗂 Dataset
+NumPy
 
-File name: Loan_approval_data_2025.csv
+Applied for efficient numerical operations, vectorized computations, and data transformation support.
 
-Source: Kaggle (Realistic Loan Approval Dataset – US & Canada)
+Scikit-learn
 
-Target Variable: loan_status
+Employed as the core machine learning framework for the end-to-end pipeline, including:
 
-Features: Applicant income, credit history, loan amount, employment details, etc.
+Data partitioning using stratified train_test_split to preserve class distribution
 
-⚙️ Technologies Used
+Categorical feature transformation using LabelEncoder
 
-Python
+Model construction using DecisionTreeClassifier with entropy-based splitting criteria
 
-Google Colab
+Hyperparameter tuning controls, including max_depth, min_samples_split, and min_samples_leaf, to mitigate overfitting
 
-Libraries:
+Class imbalance handling using class_weight='balanced'
 
-pandas
-
-numpy
-
-scikit-learn
-
-🧠 Machine Learning Model
-
-Algorithm: Decision Tree Classifier
-
-Criterion: Entropy
-
-Max Depth: 10
-
-Class Weight: Balanced
-
-Train-Test Split: 80% / 20% (Stratified)
+Model evaluation using accuracy_score for quantitative performance assessment
